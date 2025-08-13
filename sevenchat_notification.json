@@ -1,0 +1,31 @@
+{
+  "notification": {
+    "id": "sevenchat_1754961180",
+    "type": "m.room.message",
+    "sender": "@testuser:sevenchat.space",
+    "room_id": "!testroom:sevenchat.space",
+    "room_name": "Test Room",
+    "sender_display_name": "Test User",
+    "content": {
+      "msgtype": "m.text", 
+      "body": "Test message from SevenChat"
+    },
+    "counts": {
+      "unread": 1,
+      "missed_calls": 0
+    },
+    "devices": [
+      {
+        "app_id": "io.sevenchat.sevenchat",
+        "pushkey": "e956c68f0f261a29b8856f5cba7762a0731abfe90957b3d734630a49fb128c6",
+        "pushkey_ts": 1754961180000,
+        "data": {
+          "format": "event_id_only"
+        },
+        "tweaks": {
+          "sound": "default"
+        }
+      }
+    ]
+  }
+}

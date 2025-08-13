@@ -1,0 +1,25 @@
+{
+  "notification": {
+    "id": "test_notification_001",
+    "type": "m.room.message",
+    "sender": "test@sevenchat.space",
+    "room_id": "!test:sevenchat.space",
+    "room_name": "Test Room",
+    "sender_display_name": "Test User",
+    "content": {
+      "msgtype": "m.text",
+      "body": "🎉 Test push notification from SevenChat!"
+    },
+    "devices": [
+      {
+        "app_id": "io.element.elementx.ios.prod",
+        "pushkey": "e956c68f0f261a29b8856f5cba7762a0731abfe90957b3d734630a49fb128c6",
+        "pushkey_ts": 1691234567000,
+        "data": {},
+        "tweaks": {
+          "sound": "default"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "notification": {
+    "id": "debug_1754961251",
+    "type": "m.room.message",
+    "sender": "@debug:sevenchat.space",
+    "room_id": "!debug:sevenchat.space",
+    "content": {
+      "msgtype": "m.text", 
+      "body": "Debug test message"
+    },
+    "counts": {
+      "unread": 1
+    },
+    "devices": [
+      {
+        "app_id": "io.sevenchat.sevenchat.ios.prod",
+        "pushkey": "c7089f968004c3cf314108af32d170ab4d1a9204e6c3396375176e1c7bc0861a",
+        "pushkey_ts": 1754961251000,
+        "data": {
+          "format": "event_id_only"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "notification": {
+    "id": "$1754899228",
+    "type": "m.room.message",
+    "sender": "@test:sevenchat.space",
+    "room_id": "!testroom:sevenchat.space",
+    "room_name": "Test Room",
+    "sender_display_name": "Test User",
+    "content": {
+      "msgtype": "m.text", 
+      "body": "Test message from Matrix"
+    },
+    "counts": {
+      "unread": 1,
+      "missed_calls": 0
+    },
+    "devices": [
+      {
+        "app_id": "io.element.elementx.ios.prod",
+        "pushkey": "e956c68f0f261a29b8856f5cba7762a0731abfe90957b3d734630a49fb128c6",
+        "pushkey_ts": 1754899228000,
+        "data": {
+          "format": "event_id_only"
+        },
+        "tweaks": {
+          "sound": "default"
+        }
+      }
+    ]
+  }
+}

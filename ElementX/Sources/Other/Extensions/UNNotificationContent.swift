@@ -24,6 +24,10 @@ extension UNNotificationContent {
     @objc var pusherNotificationClientIdentifier: String? {
         userInfo[NotificationConstants.UserInfoKey.pusherNotificationClientIdentifier] as? String
     }
+    
+    var unreadCount: Int? {
+        userInfo[NotificationConstants.UserInfoKey.unreadCount] as? Int
+    }
 }
 
 extension UNMutableNotificationContent {
@@ -52,9 +56,5 @@ extension UNMutableNotificationContent {
         set {
             userInfo[NotificationConstants.UserInfoKey.eventIdentifier] = newValue
         }
-    }
-    
-    var unreadCount: Int? {
-        userInfo[NotificationConstants.UserInfoKey.unreadCount] as? Int
     }
 }

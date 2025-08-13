@@ -1,0 +1,26 @@
+{
+  "notification": {
+    "devices": [
+      {
+        "app_id": "io.sevenchat.sevenchat",
+        "pushkey": "rL+EWYBHTUy8JAcG2Ha2RZ8Dt2PSmfbCLNKvyJ2lyH8=",
+        "data": {
+          "default_payload": {
+            "aps": {
+              "alert": {
+                "title": "🔍 Debug Test",
+                "body": "Testing current device token - Tue Aug 12 19:56:38 PDT 2025"
+              },
+              "sound": "default",
+              "badge": 1,
+              "mutable-content": 1
+            }
+          }
+        },
+        "tweaks": {
+          "sound": "default"
+        }
+      }
+    ]
+  }
+}

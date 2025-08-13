@@ -30,10 +30,17 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let tokenString = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
+        MXLog.info("🎫 [AppDelegate] didRegisterForRemoteNotificationsWithDeviceToken: \(tokenString)")
+        print("🚨 DEVICE TOKEN FOR TESTING: \(tokenString)")
+        print("🚨 Copy this token to test push notifications!")
+        print("🚨 Token length: \(tokenString.count) characters")
+        print("🚨 App will now register this token with Matrix server...")
         callbacks.send(.registeredNotifications(deviceToken: deviceToken))
     }
 
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        MXLog.error("❌ [AppDelegate] didFailToRegisterForRemoteNotificationsWithError: \(error)")
         callbacks.send(.failedToRegisteredNotifications(error: error))
     }
 

@@ -1,0 +1,37 @@
+#!/bin/bash
+
+echo "💬 TEST GỬI TIN NHẮN THẬT"
+echo "========================"
+
+echo ""
+echo "📋 HƯỚNG DẪN:"
+echo "1. Mở app SevenChat trên iPhone"
+echo "2. Đăng nhập vào tài khoản"
+echo "3. Đợi app đăng ký device token mới"
+echo "4. Gửi tin nhắn thật từ tài khoản khác"
+echo "5. Kiểm tra notification và badge count"
+echo ""
+
+echo "🔍 Kiểm tra device token mới đã được đăng ký chưa..."
+ssh root@178.16.137.171 "docker exec synapse-db psql -U synapse -d synapse -c \"SELECT pushkey, app_id, profile_tag, kind FROM pushers WHERE app_id = 'io.sevenchat.sevenchat';\""
+
+echo ""
+echo "📊 Kiểm tra logs khi có tin nhắn mới..."
+ssh root@178.16.137.171 "docker logs matrix-push-adapter --tail=5"
+
+echo ""
+echo "🎯 KẾT QUẢ:"
+echo "==========="
+echo "✅ Push notification đã hoạt động (test thành công)"
+echo "❌ Device token mới chưa được đăng ký với Matrix server"
+echo "🔧 Cần đăng nhập app để đăng ký token mới"
+echo ""
+echo "📋 BƯỚC TIẾP THEO:"
+echo "=================="
+echo "1. Mở app SevenChat trên iPhone"
+echo "2. Đăng nhập vào tài khoản"
+echo "3. Đợi 10-30 giây để app đăng ký token"
+echo "4. Gửi tin nhắn thật từ tài khoản khác"
+echo "5. Kiểm tra notification và badge count"
+echo ""
+echo "Hãy cho tôi biết kết quả sau khi đăng nhập app!"

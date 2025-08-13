@@ -1,0 +1,25 @@
+{
+  "notification": {
+    "devices": [
+      {
+        "app_id": "io.element.elementx.ios.prod",
+        "pushkey": "e956c68f0f261a29b8856f5cba7762a0731abfe90957b3d734630a49fb128c6",
+        "data": {
+          "aps": {
+            "alert": {
+              "title": "💬 SevenChat",
+              "subtitle": "New Message",
+              "body": "You have a new message in SevenChat"
+            },
+            "sound": "default",
+            "badge": 1,
+            "mutable-content": 0
+          }
+        },
+        "tweaks": {
+          "sound": "default"
+        }
+      }
+    ]
+  }
+}

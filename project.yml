@@ -17,7 +17,6 @@ options:
   - order:
     - SevenChat
     - NSE
-    - ShareExtension
     - UnitTests
     - PreviewTests
     - UITests
@@ -61,7 +60,6 @@ include:
 - path: UITests/SupportingFiles/target.yml
 - path: IntegrationTests/SupportingFiles/target.yml
 - path: NSE/SupportingFiles/target.yml
-- path: ShareExtension/SupportingFiles/target.yml
 - path: AccessibilityTests/SupportingFiles/target.yml
 # - path: MyAppVariant/override.yml
 
@@ -110,7 +108,7 @@ packages:
     minorVersion: 5.6.0
   DSWaveformImage:
     url: https://github.com/dmrschmidt/DSWaveformImage
-    exactVersion: 14.1.1
+    minorVersion: 14.0.0
   DTCoreText:
     url: https://github.com/Cocoanetics/DTCoreText
     exactVersion: 1.6.26

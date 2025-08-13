@@ -221,7 +221,6 @@ targets:
 
     dependencies:
     - target: NSE
-    - target: ShareExtension
     - package: MatrixRustSDK
       embed: true
     - package: Compound
